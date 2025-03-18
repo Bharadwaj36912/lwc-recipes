@@ -11,6 +11,7 @@
                 <template for:each={contacts} for:item="contact">
                     <p key={contact.Id}>{contact.Name}</p>
                 </template>
+                <p> this is my range </p>
             </template>
             <template lwc:elseif={error}>
                 <c-error-panel errors={error}></c-error-panel>
